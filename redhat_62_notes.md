@@ -44,7 +44,25 @@ Go through the process of setting up Red Hat. TRext mode installation is advisab
 
 ## First boot
 
-TODO
+One "hack" I required had to do with some funny hard drive behavior/errors I got that required a `lilo` entry as can be seen in the screenshots below:
+
+The first screenshot shows the error: `hda: lost interrupt`
+
+![Shot 1](screenshots/qemu_redhat62_setup_01.png)
+
+The initial fix: enter `linux noapic` to the initial boot screen:
+
+![Shot 2](screenshots/qemu_redhat62_setup_02.png)
+
+Make the change permanent in the `/etc/lilo.conf` file:
+
+![Shot 3](screenshots/qemu_redhat62_setup_03.png)
+
+Remember to make the change "active" by running `lilo`:
+
+![Shot 4](screenshots/qemu_redhat62_setup_04.png)
+
+From here on it should be smooth sailing
 
 ## Remote connecting
 
