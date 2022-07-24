@@ -6,4 +6,4 @@ PARAM_TWO=$2
 DRIVE_NAME="${PARAM_ONE:=c}"
 SIZE="${PARAM_TWO:=2G}"
 
-qemu-img create $IMAGES/$DRIVE_NAME.img $SIZE
+qemu-img create $DRIVE_NAME.img $SIZE

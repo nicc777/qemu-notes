@@ -20,3 +20,11 @@ For more detailed notes, consult the documentation as listed below:
 |-----------------------------------------|---------------------------------|
 | [Red Hat 6.2 Notes](redhat_62_notes.md) | Notes for launching Red Hat 6.2 |
 
+# Creating a Hard Drive image
+
+Assuming you have cloned this repository and the project directory is your current `$PWD`, you can use the following command to create a 1GB hard drive in a newly created `images/` directory (which is in `.gitignore`):
+
+```shell
+$ ./create_2g_c_drive.sh $PWD/images/c 1G
+Formatting '//home/your-user-name/git/qemu-notes/images/c.img', fmt=raw size=1073741824
+```
