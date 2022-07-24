@@ -17,3 +17,15 @@ mkdir images
 Also copy the RedHat 6.2 ISO to `$PWD/images/zoot-i386.iso`
 
 Alternative, update the `install_redhat62.sh` and `launch_redhat62.sh` files to suite your needs.
+
+The `$PWD/images/` directory now looks like this:
+
+```shell
+$ ls $PWD/images/
+total 641M
+drwxrwxr-x 4 user user 4.0K Jul 24 08:47 ..
+-rw-rw-r-- 1 user user 641M Jul 24 08:50 zoot-i386.iso
+-rw-r--r-- 1 user user 2.0G Jul 24 08:51 c_rh62.img
+drwxrwxr-x 2 user user 4.0K Jul 24 08:51 .
+
+```
