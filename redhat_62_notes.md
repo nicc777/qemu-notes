@@ -44,6 +44,8 @@ Go through the process of setting up Red Hat. TRext mode installation is advisab
 
 ## First boot
 
+_**Important**_: The following procedure is a post-install process, but you can also specify `noapic` as a kernel option during the installation process, thereby not requiring these steps.
+
 One "hack" I required had to do with some funny hard drive behavior/errors I got that required a `lilo` entry as can be seen in the screenshots below:
 
 The first screenshot shows the error: `hda: lost interrupt`
