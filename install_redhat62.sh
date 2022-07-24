@@ -1,6 +1,7 @@
 #!/bin/sh
 
-IMAGES="${1:=$PWD/images}"
+RHPATH=$1
+IMAGES="${RHPATH:=$PWD/images}"
 
 qemu-system-i386 \
         -monitor stdio \
