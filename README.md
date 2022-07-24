@@ -16,9 +16,10 @@ The network cards depends on the OS.
 
 For more detailed notes, consult the documentation as listed below:
 
-| Topic                                   | Description                     |
-|-----------------------------------------|---------------------------------|
-| [Red Hat 6.2 Notes](redhat_62_notes.md) | Notes for launching Red Hat 6.2 |
+| Topic                                                   | Description                                                                                       |
+|---------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [Red Hat 6.2 Notes](redhat_62_notes.md)                 | Notes for launching Red Hat 6.2                                                                   |
+| [General Notes and References](notes_and_references.md) | Notes for using Qemu as well as some other notes I made during my experimentation. Helpful hacks. |
 
 # Creating a Hard Drive image
 
