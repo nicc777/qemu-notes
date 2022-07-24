@@ -26,5 +26,11 @@ Assuming you have cloned this repository and the project directory is your curre
 
 ```shell
 $ ./create_2g_c_drive.sh $PWD/images/c 1G
-Formatting '//home/your-user-name/git/qemu-notes/images/c.img', fmt=raw size=1073741824
+Formatting '/home/your-user-name/git/qemu-notes/images/c.img', fmt=raw size=1073741824
+
+$ ls images 
+total 12K
+drwxrwxr-x 4 user user 4.0K Jul 24 08:43 ..
+-rw-r--r-- 1 user user 1.0G Jul 24 08:43 c.img
+drwxrwxr-x 2 user user 4.0K Jul 24 08:43 .
 ```
