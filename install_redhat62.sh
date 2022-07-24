@@ -1,9 +1,11 @@
 #!/bin/sh
 
+IMAGES="${1:=$PWD/images}"
+
 qemu-system-i386 \
         -monitor stdio \
         -M pc-i440fx-6.0 \
-        -hda $IMAGES/c.img \
+        -hda $IMAGES/c_rh62.img \
         -cdrom $IMAGES/zoot-i386.iso \
         -boot d \
         -cpu pentium2 \
