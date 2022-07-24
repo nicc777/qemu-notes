@@ -44,6 +44,8 @@ Go through the process of setting up Red Hat. TRext mode installation is advisab
 
 ## First boot
 
+_**Important**_: The following procedure is a post-install process, but you can also specify `noapic` as a kernel option during the installation process, thereby not requiring these steps.
+
 One "hack" I required had to do with some funny hard drive behavior/errors I got that required a `lilo` entry as can be seen in the screenshots below:
 
 The first screenshot shows the error: `hda: lost interrupt`
@@ -64,6 +66,18 @@ Remember to make the change "active" by running `lilo`:
 
 From here on it should be smooth sailing
 
-## Remote connecting
+## Running and Remote connecting
 
-TODO
+After the installation, the system can be stopped and from here on using the `./launch_redhat62.sh` script the system can be started.
+
+The script contains several port forwarding configurations that may be helpful. The are mapped to the following ports on localhost:
+
+| Service and Port        | Localhost Port | Notes                                                                                                                                     |
+|-------------------------|:--------------:|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Telnet 23/tcp           | 2023/tcp       | Works fine. Use the username you configured during initial installation as `root` login is not permitted                                  |
+| HTTP 80/tcp             | 2080/tcp       | Works fine. If you opted to install Apache this should just work.                                                                         |
+| NNTP (news) 119/tcp     | 2119/tcp       | Untested                                                                                                                                  |
+| FTP 21/tcp              | 2021/tcp       | Works fine. Tested with anonymous user, and is should just work. May require further configuration to suite your needs.                   |
+| HTTP (linuxconf) 98/tcp | 2098/tcp       | Works fine. You need to first enable web access from the console using `linuxconf`. Not recommended to expose this to any public network. |
+
+You need to edit the script to suite your needs - add and/or remove the current ports as needed.
