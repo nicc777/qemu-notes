@@ -13,5 +13,5 @@ qemu-system-i386 \
         -m 128 \
         -vga cirrus \
         -net nic,model=ne2k_pci \
-        -net user,id=mynic,net=10.0.50.20/255.255.255.0,dns=8.8.8.8,hostfwd=tcp:127.0.0.1:2023-:23,hostfwd=tcp:127.0.0.1:2080-:80,hostfwd=tcp:127.0.0.1:2119-:119,hostfwd=tcp:127.0.0.1:2021-:21,hostfwd=tcp:127.0.0.1:2098-:98 \
+        -net user,id=mynic,net=10.0.50.20/255.255.255.0,dns=8.8.8.8,hostfwd=tcp:127.0.0.1:2023-:23,hostfwd=tcp:127.0.0.1:2080-:80,hostfwd=tcp:127.0.0.1:2119-:119,hostfwd=tcp:127.0.0.1:2021-:21,hostfwd=tcp:127.0.0.1:2098-:98,hostfwd=tcp:127.0.0.1:2020-:20 \
         -rtc base=localtime
