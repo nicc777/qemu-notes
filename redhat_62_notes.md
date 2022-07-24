@@ -81,3 +81,31 @@ The script contains several port forwarding configurations that may be helpful. 
 | HTTP (linuxconf) 98/tcp | 2098/tcp       | Works fine. You need to first enable web access from the console using `linuxconf`. Not recommended to expose this to any public network. |
 
 You need to edit the script to suite your needs - add and/or remove the current ports as needed.
+
+A note on FTP: I suggest you use [filezilla](https://filezilla-project.org/) and below is the settings that worked for me:
+
+Setup a connection to localhost on port 2021/tcp:
+
+![Shot 1](screenshots/filezilla_01.png)
+
+Server type can be set to Unix:
+
+![Shot 2](screenshots/filezilla_02.png)
+
+Transfers must be Active so that the server can connect back to the client on a known host and port
+
+![Shot 3](screenshots/filezilla_03.png)
+
+In the general settings, set the Active IP Address as per your local setup. Whatever the Network range is that qemu uses (mine was 10.0.50.0/24), your host is at .2:
+
+![Shot 4](screenshots/filezilla_04.png)
+
+Set fall back to Active
+
+![Shot 5](screenshots/filezilla_05.png)
+
+Finally, testing that everything is working:
+
+![Shot 6](screenshots/filezilla_06.png)
+
+
