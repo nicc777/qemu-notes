@@ -29,3 +29,23 @@ drwxrwxr-x 4 user user 4.0K Jul 24 08:47 ..
 drwxrwxr-x 2 user user 4.0K Jul 24 08:51 .
 
 ```
+
+## Installation
+
+Run the following command:
+
+```shell
+./install_redhat62.sh
+```
+
+This will run the emulation booting from the mounted CD ROM drive containing the Red Hat 6.2 installation disc image (`$PWD/images/zoot-i386.iso` by default).
+
+Go through the process of setting up Red Hat. TRext mode installation is advisable.
+
+## First boot
+
+TODO
+
+## Remote connecting
+
+TODO
