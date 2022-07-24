@@ -25,7 +25,7 @@ For more detailed notes, consult the documentation as listed below:
 Assuming you have cloned this repository and the project directory is your current `$PWD`, you can use the following command to create a 1GB hard drive in a newly created `images/` directory (which is in `.gitignore`):
 
 ```shell
-$ ./create_2g_c_drive.sh $PWD/images/c 1G
+$ ./create_hdd_drive.sh $PWD/images/c 1G
 Formatting '/home/your-user-name/git/qemu-notes/images/c.img', fmt=raw size=1073741824
 
 $ ls images 
@@ -34,3 +34,5 @@ drwxrwxr-x 4 user user 4.0K Jul 24 08:43 ..
 -rw-r--r-- 1 user user 1.0G Jul 24 08:43 c.img
 drwxrwxr-x 2 user user 4.0K Jul 24 08:43 .
 ```
+
+The default, with no parameters passed to the script, is to create a 2GB drive in the `./images/` directory.
