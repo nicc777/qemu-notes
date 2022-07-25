@@ -13,5 +13,5 @@ qemu-system-i386 \
         -m 128 \
         -vga cirrus \
 	-device ne2k_pci,netdev=internet \
-        -netdev user,id=internet,net=10.0.50.0/255.255.255.0,dns=8.8.8.8,ipv6=off \
+        -netdev user,id=internet,net=10.0.50.0/255.255.255.0,dns=8.8.8.8,ipv6=off,hostfwd=tcp:127.0.0.1:2023-:23,hostfwd=tcp:127.0.0.1:2080-:80,hostfwd=tcp:127.0.0.1:2119-:119,hostfwd=tcp:127.0.0.1:2021-:21,hostfwd=tcp:127.0.0.1:2098-:98,hostfwd=tcp:127.0.0.1:2020-:20 \
         -rtc base=localtime
