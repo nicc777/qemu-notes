@@ -12,6 +12,6 @@ qemu-system-i386 \
         -cpu pentium2 \
         -m 128 \
         -vga cirrus \
-        -net nic,model=ne2k_pci \
-        -net user,id=mynic,net=10.0.50.20/255.255.255.0,dns=8.8.8.8 \
+        -device ne2k_pci,netdev=internet \
+        -netdev user,id=internet,net=10.0.50.0/255.255.255.0,dns=8.8.8.8,ipv6=off \
         -rtc base=localtime
