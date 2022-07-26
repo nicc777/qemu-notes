@@ -28,4 +28,4 @@ Basic steps to get the installation process going:
 * Eventually, When the `restart` dialog appears, use the Qemu monitor to just exit the VM by entering `q+ENTER`
 * You can now use the `launch_windows98.sh` script from the next boot onwards.
 
-The rest of thw installation process is GUI driven and should be fairly straight forward.
+The installation process is GUI driven and should be fairly straight forward.
