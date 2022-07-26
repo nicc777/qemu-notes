@@ -22,19 +22,4 @@ For more detailed notes, consult the documentation as listed below:
 | [Windows 98 Notes](windows_98_notes.md)                 | Notes for launching Red Hat 6.2                                                                   |
 | [General Notes and References](notes_and_references.md) | Notes for using Qemu as well as some other notes I made during my experimentation. Helpful hacks. |
 
-# Creating a Hard Drive image
-
-Assuming you have cloned this repository and the project directory is your current `$PWD`, you can use the following command to create a 1GB hard drive in a newly created `images/` directory (which is in `.gitignore`):
-
-```shell
-$ ./create_hdd_drive.sh $PWD/images/c 1G
-Formatting '/home/your-user-name/git/qemu-notes/images/c.img', fmt=raw size=1073741824
-
-$ ls images 
-total 12K
-drwxrwxr-x 4 user user 4.0K Jul 24 08:43 ..
--rw-r--r-- 1 user user 1.0G Jul 24 08:43 c.img
-drwxrwxr-x 2 user user 4.0K Jul 24 08:43 .
-```
-
-The default, with no parameters passed to the script, is to create a 2GB drive in the `./images/` directory.
+On my setup, the networking works, but I have not yet got to the point where two running hosts can talk to each other directly. FTP "works", but requires some hacking. I will endeavour to update these notes as I learn more.
