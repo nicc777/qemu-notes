@@ -1,8 +1,6 @@
 # Windows 98 Notes
 
-_**Important**_: You will need original installation media (CD ROM) with the Windows Key. Create an ISO image from the original CD Media.
-
-_**Important**_: You also will need a Windows 98 Boot Floppy Image.
+_**Important**_: You will need original installation media (CD ROM and boot floppy) with the Windows Key. Create an ISO image from the original CD Media and a floppy image from the boot floppy.
 
 Windows 98 setup is slightly more involved than the [RedHat 6.2 installation](redhat_62_notes.md)
 
