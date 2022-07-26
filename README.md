@@ -9,7 +9,7 @@ The hardware emulations is roughly teh following:
 * Pentium 2 based system
 * 128 MB RAM (less for some machines)
 * 2GB Hard Drive (less for some machines)
-* Cirrus graphics (Logic GD 5446) (as reported by RedHat OS)
+* Cirrus graphics (Logic GD 5446 - as reported by RedHat OS)
 * No Sound
 
 The network cards depends on the OS.
