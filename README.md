@@ -4,7 +4,7 @@ Notes for qemu usage
 
 This repository contains a collection of notes and scripts I use for my [qemu](https://www.qemu.org/) emulations.
 
-The hardware emulations is roughly teh following:
+The hardware emulations is roughly the following:
 
 * Pentium 2 based system
 * 128 MB RAM (less for some machines)
